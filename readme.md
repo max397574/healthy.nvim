@@ -5,7 +5,7 @@ A plugin to stay healthy while coding with neovim.
 ## ✨Features
 
 * Get a message to do a healthy thing
-    * Customizable events
+    * Customizable events (Coming soon)
     * Customizable messages
 
 
@@ -30,11 +30,23 @@ You can customize with the following lines in a vim configuration. These are the
 ```lua
 lua << EOF
 require('healthy_nvim').setup{
+  messages = {
+    "Posture check📏",
+    "Drink water💧",
+    "Stand Up a little bit🪑❌",
+    "Do some pushups or squats🏋️"
+  }
 }
 EOF
 ```
 And this in a lua configuration:
 ```lua
 require('healthy_nvim').setup{
+  messages = {
+    "Posture check📏",
+    "Drink water💧",
+    "Stand Up a little bit🪑❌",
+    "Do some pushups or squats🏋️"
+  }
 }
 ```
